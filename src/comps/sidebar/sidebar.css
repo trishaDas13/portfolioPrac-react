@@ -1,0 +1,50 @@
+aside{
+    border: 1px solid black;
+    width: 250px;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    padding: 2rem;
+    align-items: center;
+    text-align: center;
+    background-color: rgb(33,130,156);
+    border-radius: 15px;
+    color: white;
+}
+aside .name_info img{
+    width: 150px;
+    height: 150px;
+    border-radius: 15px;
+}
+aside .name_info p{
+    border: 1px solid white;
+    padding: 4px;
+    border-radius: 15px;
+    box-shadow: 0 0 10px white;
+    font-weight: 600;
+    margin: 10px 0;
+}
+.link_info{
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+}
+.personal_info{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    text-align: initial;
+}
+.personal_info_card{
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+.personal_info_card .icon{
+    background-color: rgb(32,48,54);
+    padding: 0.5rem;
+    border-radius: 10px;
+}
+.personal_info_card h6{
+    color: rgba(255, 255, 255, 0.521);
+}
