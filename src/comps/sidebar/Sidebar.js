@@ -70,10 +70,10 @@ function Sidebar() {
     useEffect(() => {
         let intervalId = setInterval(()=>{
             if (text[index] === "Hello, World !") {
-                clearInterval(intervalId);
-              }
+                setIndex("Hello, World !");
+            }
           
-              setIndex((prevIndex) => (prevIndex + 1) % text.length);
+              setIndex((prevIndex) => (prevIndex + 1));
         }, 100);
     
         // Clear the interval when the component is unmounted
