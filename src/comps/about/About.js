@@ -3,6 +3,7 @@ import Primaryfocus from './Primaryfocus';
 import Creativity from './Creativity';
 import Activities from './Activities';
 import Skills from './Skills';
+import { nanoid } from 'nanoid'
 
 const About = () => {
 
@@ -31,7 +32,8 @@ const About = () => {
                 }}>
                 {
                     paraArr.map((ele) =>{
-                        return(<p key = {Date.now()}>{ele}</p>);
+                        console.log(ele);
+                        return(<p key = {nanoid()}>{ele}</p>);
                     })
                 }
             </div>            

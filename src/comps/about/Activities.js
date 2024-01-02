@@ -3,6 +3,7 @@ import icon1 from '../../assets/activity1.png'
 import icon2 from '../../assets/activity2.png'
 import icon3 from '../../assets/activity3.png'
 import icon4 from '../../assets/activity4.png'
+import { nanoid } from 'nanoid'
 
 const Activities = () => {
 
@@ -33,7 +34,7 @@ const Activities = () => {
         {
             activityArray.map((item)=>{
                 return(
-                    <div className= "activity_card" key={Date.now()}>
+                    <div className= "activity_card" key={nanoid()}>
                         <img src={item.icon} alt="error" />
                         <h4>{item.heading}</h4>
                         <p>{item.content}</p>
