@@ -15,18 +15,18 @@ function Primaryfocus() {
         },
         {
             icon: icon2,
-            heading: "Web Design & Development",
-            content: "Creating attractive, easy-to-use websites that work well for businesses and individuals online."
+            heading: "Mobile Apps & Games",
+            content: "Creating and developing engaging mobile apps and games for iOS and Android devices."
         },
         {
             icon: icon3,
-            heading: "Web Design & Development",
-            content: "Creating attractive, easy-to-use websites that work well for businesses and individuals online."
+            heading: "Development Solutions",
+            content: "Utilizing JavaScript frameworks like React, Node, Next, Vue and more to build interactive web applications."
         },
         {
             icon: icon4,
-            heading: "Web Design & Development",
-            content: "Creating attractive, easy-to-use websites that work well for businesses and individuals online."
+            heading: "Marketing & SEO",
+            content: "Using SEO and marketing strategies to boost online visibility and promote products or services."
         }
     ]
   return (
@@ -37,7 +37,7 @@ function Primaryfocus() {
                 primaryFocusArray.map((item) => {
                     return(
                         <div key = {nanoid()} className='primary_focus_card'>
-                            <img src={item.icon} alt="error" width='50px' height='100px' />
+                            <img src={item.icon} alt="error" width='40px' height='40px' />
                             <div className="content">
                                 <h3>{item.heading}</h3>
                                 <p>{item.content}</p>

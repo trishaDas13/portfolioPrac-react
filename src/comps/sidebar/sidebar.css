@@ -8,9 +8,10 @@ aside{
     align-items: center;
     text-align: center;
     background-color: rgb(33,130,156);
-    border-radius: 15px;
+    border-radius: 20px;
     color: white;
     position: sticky;
+    top: 2rem;
 }
 aside .name_info img{
     width: 150px;

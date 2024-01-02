@@ -32,8 +32,9 @@ const About = () => {
     }
 
   return (
-    
-        <div className="para_container" >
+    <>
+    <h1>About me</h1>
+    <div className="para_container" >
             <div className="para" style={{
                 overflow:"hidden",
                 whiteSpace: "nowrap",
@@ -54,6 +55,8 @@ const About = () => {
             <Activities/>
         </div>
   
+    </>
+        
   )
 }
 
