@@ -6,3 +6,8 @@
     'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
     sans-serif;
 }
+#root{
+  background-color: rgb(35,207,251);
+  padding: 2rem;
+
+}

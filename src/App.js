@@ -1,11 +1,11 @@
 import Sidebar from './comps/sidebar/Sidebar'
-import About from './comps/about/About'
+import Main from './comps/main/Main'
 
 function App() {
   return (
     <div className="App">
       <Sidebar/>
-      <About/>
+      <Main/>
     </div>
   );
 }

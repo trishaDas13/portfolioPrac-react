@@ -7,7 +7,22 @@
 }
 .App{
     display: flex;
-    
+    gap: 50px;
+    align-items:flex-start;
+    justify-content: center;
+    color: white;
 }
-
-
+main{
+   border: 1px solid black; 
+   width: 60%;
+}
+.primary_focus_card{
+    width: 350px;
+    background: -webkit-linear-gradient(135deg, rgb(78, 139, 158) 0%, hsla(195, 57%, 29%, 1) 100%);
+}
+.primary_focus_cards{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+    align-items: center;
+}
