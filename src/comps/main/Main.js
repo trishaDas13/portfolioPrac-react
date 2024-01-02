@@ -1,66 +1,45 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import About from "../about/About";
-import Certificates from '../Certificates/Certificates'
-import Projects from '../Projects/Projects'
-import More from '../More/More'
-import Contact from '../Contact/Contact'
+import Certificates from "../Certificates/Certificates";
+import Projects from "../Projects/Projects";
+import More from "../More/More";
+import Contact from "../Contact/Contact";
 import "../about/about.css";
-import { nanoid } from 'nanoid'
 import Header from "./Header";
-let navLinks = [
-  {
-    menu: "About",
-  },
-  { 
-    menu: "Certificates" 
-  },
-  { 
-    menu: "Projects" 
-  },
-  { 
-    menu: "More" 
-  },
-  { 
-    menu: "Contact" 
-  }
-];
-
-function renderPage(menu) {
-  if(menu === "About"){
-    return <About />;
-  }
-  else if(menu === "Certificates"){
-    return <Certificates/>;
-  }
-  else if(menu === "Projects"){
-    return <Projects/>;
-  }
-  else if(menu === "More"){
-    return <More/>;
-  }
-  else if(menu === "Contact"){
-    return <Contact/>;
-  }
-  
-}
 
 const Main = () => {
+  const [menu, setMenu] = useState("About");
+  const [currentMenu, setCurrentMenu] = useState("About");
+
+  //TODO useEffect wwhen component updated with menu dependency
+  useEffect(() => {
+    setCurrentMenu(menu);
+  }, [menu]);
+
+  //TODO function for rendering components according to navbar
+  function renderPage() {
+    if (menu === "About") {
+      document.title = "Mayank Gupta";
+      return <About />;
+    } else if (menu === "Certificates") {
+      document.title = "Mayank Gupta - Certificates";
+      return <Certificates />;
+    } else if (menu === "Projects") {
+      document.title = "Mayank Gupta - Projects";
+      return <Projects />;
+    } else if (menu === "More") {
+      document.title = "Mayank Gupta - More";
+      return <More />;
+    } else if (menu === "Contact") {
+      document.title = "Mayank Gupta - Contact";
+      return <Contact />;
+    }
+  }
+
   return (
     <main>
-      <header>
-        <ul className="nav-link">
-          {
-            navLinks.map((item) => {
-              return(
-              <li key={nanoid()}>
-                <button onClick={() => renderPage(item.menu)}>{item.menu}</button>
-              </li>
-              )
-            })
-          }
-        </ul>
-      </header>
-      <About />
+      <Header setMenu={setMenu} currentMenu={currentMenu} />
+      {renderPage()}
     </main>
   );
 };
