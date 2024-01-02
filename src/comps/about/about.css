@@ -21,6 +21,7 @@ main{
    border-radius: 20px;
    background-color: rgb(33,134,160);
 }
+/* -------------------- primary focus ------------------- */
 .primary_focus_cards, .activity{
     display: flex;
     flex-wrap: wrap;
@@ -51,6 +52,7 @@ main{
     letter-spacing: 1px;
     color: rgba(255, 255, 255, 0.849);
 }
+/* -------------------- activity ------------------- */
 .activity{
     margin: 2rem 0;
 }
@@ -60,7 +62,6 @@ main{
     position: relative;
     box-shadow: 0 0 5px inset rgb(34,115,144);
     border-radius: 15px;
-   
     background: -webkit-linear-gradient(135deg, rgb(34,97,117) 0%, rgba(44, 82, 93, 1) 100%);
 }
 .activity_card img{
@@ -78,3 +79,44 @@ main{
     margin-bottom: 10px;
     margin-left: 90px
 }
+/* -------------------- text ------------------- */
+.para_container {
+    color: #d6d6d6;
+    line-height:24px;
+    text-align:start;
+    background: -webkit-linear-gradient(135deg, rgb(34,97,117) 0%, rgba(44, 82, 93, 1) 100%);
+    padding: 2rem;
+    border-radius: 15px;
+    margin-bottom: 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+}
+.para_container .para{
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    font-size:15px;
+}
+.para_container button{
+    font-size:15px;
+    outline: none;
+    border: none;
+    background: transparent;
+    color: white;   
+    animation: float 4s ease-in-out infinite;
+    cursor: pointer;
+}
+
+@keyframes float {
+    0% {
+      transform: translatey(0px);
+    }
+    50% {
+      transform: translatey(10px);
+    }
+    100% {
+      transform: translatey(0px);
+    }
+  }
