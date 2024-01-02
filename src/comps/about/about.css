@@ -1,0 +1,13 @@
+/* -------------------- skill ------------------- */
+.image_container{
+    border: 2px solid;
+    width: 60%;
+    display: flex;
+    overflow: scroll;
+}
+.App{
+    display: flex;
+    
+}
+
+
