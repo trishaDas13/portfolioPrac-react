@@ -30,6 +30,8 @@ const Activities = () => {
     ]
 
   return (
+    <div className='activities'>
+    <h2>Favorite Activities</h2>
     <div className='activity'>
         {
             activityArray.map((item)=>{
@@ -43,6 +45,8 @@ const Activities = () => {
             })
         }
     </div>
+    </div>
+    
   )
 }
 
