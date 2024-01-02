@@ -9,6 +9,7 @@ const About = () => {
 
     //todo ----- declair state varriable -----
     const[divSize, setDivSize] = useState(false);
+    const [hideText, setHideText] = useState("Show More")
     const[paraArr, setParaArr] = useState(
         [
             "Hello there! 👋 My name is Oktay and I'm from Berlin, Germany. As a Full-Stack software developer, I specialize in creating visually appealing websites, apps and mobile games. My passion for graphic design isn't just a hobby, it's a key ingredient in every project I work on.",
@@ -21,6 +22,11 @@ const About = () => {
     //todo ----- set para size -----
     function toggleHandeler(){
         setDivSize(!divSize);
+        let text = "Hide Text"
+        if (hideText === "Hide Text"){
+            text = "Show More";
+        }
+        setHideText(text)
     }
 
   return (
@@ -28,11 +34,10 @@ const About = () => {
         {console.log(divSize)}
         <div className="para_container" >
             <div className="para" style={{
-                // overflow:"hidden",
-                // whiteSpace: "nowrap",
-                // textWrap: "wrap",
-                // height:  divSize ? "auto" : "50px",
-                // height:"auto",
+                overflow:"hidden",
+                whiteSpace: "nowrap",
+                textWrap: "wrap",
+                height:  divSize ? "auto" : "50px",
                 }}>
                     {console.log(paraArr)}
                 {
@@ -42,7 +47,7 @@ const About = () => {
                     })
                 }
             </div>            
-            <button onClick={toggleHandeler}>Show More</button>
+            <button onClick={toggleHandeler}>{hideText}</button>
             <Primaryfocus/>
             <Creativity/>
             <Skills/>
