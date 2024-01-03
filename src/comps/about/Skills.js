@@ -32,7 +32,7 @@ const Skills = () => {
             {
                 imageArray.map((image,i) =>{
                     return(
-                        <img src={image} alt="error" key={i} width="100px" height="100px"/>
+                        <img src={image} alt="error" key={i}/>
                     );
                 })
             }

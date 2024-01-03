@@ -121,7 +121,7 @@ main{
     display: flex;
     justify-content: flex-start;
     align-items: flex-start;
-    gap: 15px;
+    gap: 20px;
     padding: 4rem 0;
     overflow-x: auto;
     overscroll-behavior-inline: contain;
@@ -132,6 +132,7 @@ main{
   .Skills .image_container img{
     transition: 0.25s ease;
     cursor: pointer;
+    width: 150px;
   }
   .Skills .image_container img:hover{
     filter: drop-shadow(10px 10px 30px hsl(45, 100%, 71%));
