@@ -2,6 +2,8 @@ import React from "react";
 import image1 from "../../assets/more/more1.jpg";
 import image2 from "../../assets/more/more2.jpg";
 import image3 from "../../assets/more/more3.png";
+import {nanoid} from "nanoid"
+import './more.css';
 
 const More = () => {
   let data = [
@@ -14,8 +16,8 @@ const More = () => {
         "I create and manage the Pigletz community's social media presence, including producing and editing high-quality Web3 content for their YouTube channel. I also work on expanding the community's reach and impact through partnerships in the Web3 space.",
       button1svg: (
         <svg
-          width="24"
-          height="24"
+          width="16"
+          height="16"
           viewBox="0 0 16 16"
           xmlns="http://www.w3.org/2000/svg"
         >
@@ -28,8 +30,8 @@ const More = () => {
       button1names: "Website",
       button2svg: (
         <svg
-          width="24"
-          height="24"
+          width="16"
+          height="16"
           viewBox="0 0 24 24"
           xmlns="http://www.w3.org/2000/svg"
         >
@@ -46,8 +48,8 @@ const More = () => {
       button2names: "Instagram",
       button3svg: (
         <svg
-          width="27"
-          height="24"
+          width="16"
+          height="16"
           viewBox="0 0 576 512"
           xmlns="http://www.w3.org/2000/svg"
         >
@@ -67,14 +69,14 @@ const More = () => {
       description:
         "Produced over 100 instrumentals in different genres, collaborated with artists and my beats are on popular streaming platforms like Spotify, iTunes, Amazon and Deezer. They can also be purchased exclusively on my beatstore for musicians to create their unique sound.",
       button1svg: (
-        <svg width="24" height="24" viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg">
+        <svg width="16" height="16" viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg">
     <path fill="#f4d46f" d="M4 3v9.4c-.4-.2-.9-.4-1.5-.4c-1.4 0-2.5.9-2.5 2s1.1 2 2.5 2S5 15.1 5 14V6.7l7-2.3v5.1c-.4-.3-.9-.5-1.5-.5C9.1 9 8 9.9 8 11s1.1 2 2.5 2s2.5-.9 2.5-2V0z"/>
 </svg>),
       button1names: "Spotify",
       button2svg: (
         <svg
-          width="24"
-          height="24"
+          width="16"
+          height="16"
           viewBox="0 0 24 24"
           xmlns="http://www.w3.org/2000/svg"
         >
@@ -91,8 +93,8 @@ const More = () => {
       button2names: "Instagram",
       button3svg: (
         <svg
-          width="27"
-          height="24"
+          width="16"
+          height="16"
           viewBox="0 0 576 512"
           xmlns="http://www.w3.org/2000/svg"
         >
@@ -113,8 +115,8 @@ const More = () => {
         "My digital art portfolio, which includes a wide collection of graphic designs, 3D models and short video animations created for various purposes. I have long experience working with popular softwares like Adobe Photoshop, After Effects, Premiere Pro and Blender.",
       button2svg: (
         <svg
-          width="24"
-          height="24"
+          width="16"
+          height="16"
           viewBox="0 0 24 24"
           xmlns="http://www.w3.org/2000/svg"
         >
@@ -137,11 +139,12 @@ const More = () => {
         data.map((item)=>{
           return(
             
-          <div className="more_card">
-          <img src={item.img} alt="" />
+        <div className="more_card" key={nanoid()}>
+          <img src={item.img} alt="" width="100%" height="100%"/>
          <div className="content">
          <div className="specification">
             <p>{item.specification1}</p>
+            <p>•</p>
             <p>{item.specification2}</p>
           </div>
           <h3>{item.title}</h3>
