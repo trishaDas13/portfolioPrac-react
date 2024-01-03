@@ -1,0 +1,15 @@
+.article_title{
+    margin: 1rem 0 3rem 1rem;
+    position: relative;
+    font-weight: 600;
+}
+.article_title::after {
+    width: 40px;
+    height: 5px;
+    content: "";
+    position: absolute;
+    bottom: -1rem;
+    left: 0;
+    border-radius: 3px;
+    background-color: #FFC260;
+}

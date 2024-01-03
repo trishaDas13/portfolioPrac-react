@@ -2,8 +2,10 @@ import React from "react";
 import image1 from "../../assets/more/more1.jpg";
 import image2 from "../../assets/more/more2.jpg";
 import image3 from "../../assets/more/more3.png";
-import {nanoid} from "nanoid"
+import {nanoid} from "nanoid";
+import Title from "../title/Title";
 import './more.css';
+
 
 const More = () => {
   let data = [
@@ -134,7 +136,9 @@ const More = () => {
     },
   ];
   return (
-    <div className="more">
+    <>
+    <Title title="Side Projects"/>
+        <div className="more">
       {
         data.map((item)=>{
           return(
@@ -160,6 +164,8 @@ const More = () => {
         })
       }
     </div>
+    </>
+
   );
 };
 

@@ -4,8 +4,8 @@ import Primaryfocus from './Primaryfocus';
 import Creativity from './Creativity';
 import Activities from './Activities';
 import Skills from './Skills';
-import { nanoid } from 'nanoid'
-
+import { nanoid } from 'nanoid';
+import Title from '../title/Title';
 
 const About = () => {
 
@@ -33,7 +33,7 @@ const About = () => {
 
   return (
     <div className='about'>
-    <h1>About me</h1>
+    <Title title="About Me"/>
         <div className="para_container" >
             <div className="para" style={{
                 overflow:"hidden",

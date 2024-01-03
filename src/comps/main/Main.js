@@ -8,8 +8,8 @@ import "../about/about.css";
 import Header from "./Header";
 
 const Main = () => {
-  const [menu, setMenu] = useState("Certificates");
-  const [currentMenu, setCurrentMenu] = useState("Certificates");
+  const [menu, setMenu] = useState("About");
+  const [currentMenu, setCurrentMenu] = useState("About");
 
   //TODO useEffect wwhen component updated with menu dependency
   useEffect(() => {
