@@ -31,7 +31,7 @@ function Creativity() {
                         <div key = {nanoid()} className='primary_focus_card creativity_card'>
                             <div className="icon">{item.icon}</div>
                             <div className="content">
-                                <h3>{item.heading}</h3>
+                                <h4>{item.heading}</h4>
                                 <p>{item.content}</p>
                             </div>
                         </div>

@@ -39,7 +39,7 @@ function Primaryfocus() {
                         <div key = {nanoid()} className='primary_focus_card'>
                             <img src={item.icon} alt="error" width='40px' height='40px' />
                             <div className="content">
-                                <h3>{item.heading}</h3>
+                                <h4>{item.heading}</h4>
                                 <p>{item.content}</p>
                             </div>
                         </div>

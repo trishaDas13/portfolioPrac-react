@@ -19,13 +19,27 @@ aside .name_info img{
     border-radius: 15px;
 }
 aside .name_info p{
-    border: 1px solid white;
     padding: 4px;
     border-radius: 15px;
-    box-shadow: 0 0 10px white;
     font-weight: 600;
     margin: 10px 0;
+    width: 175px;
+    background-color:  hsla(240, 2%, 12%, 0.788);;
+  padding: 3px 12px;
+  border-radius: 18px;
+  animation: glow 5s ease-in-out infinite alternate;
 }
+@keyframes glow {
+    from {
+      box-shadow: 0 0 0.5px #fff, 0 0 1px #fff, 0 0 2px #fff,
+        0 0 4px hsla(45, 100%, 90%, 0.5), 0 0 7px hsla(45, 100%, 90%, 0.5),
+        0 0 10px hsla(45, 100%, 90%, 0.5), 0 0 12px hsla(45, 100%, 90%, 0.5),
+        0 0 15px hsla(45, 100%, 90%, 0.5);
+    }
+    to {
+      box-shadow: 0 0 2.5px #ffffff0e;
+    }
+  }
 .link_info{
     display: flex;
     width: 100%;
@@ -43,10 +57,19 @@ aside .name_info p{
     gap: 15px;
 }
 .personal_info_card .icon{
-    background-color: rgb(32,48,54);
-    padding: 0.5rem;
+    background-color:  hsla(240, 2%, 12%, 0.822);;
+    width: 40px;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     border-radius: 10px;
 }
 .personal_info_card h6{
+    font-size: 12px;
+    font-weight: 400;
     color: rgba(255, 255, 255, 0.521);
+}
+.personal_info_card p{
+    font-size: 12px;
 }
