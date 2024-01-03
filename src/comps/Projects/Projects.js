@@ -1,14 +1,20 @@
-import React from "react";
+import React, { useState } from "react";
 import "./Projects.css";
 import { nanoid } from "nanoid";
 import Title from "../title/Title";
 import projectData from "./ProjectUtils";
 
 const Projects = () => {
+  const [tabSelect, setTabSelect] = useState("All")
+  const [dataArr, setDataArr] = useState(projectData)
   const filterList = ["All", "Websites", "Applications", "Games"];
 
   const handleFilter = (item) => {
-    console.log(item);
+    setTabSelect(item)
+    let newDataArr = projectData.filter((ele) => {
+      return ele.type === item || item === 'All'
+    })
+    setDataArr(newDataArr);
   };
   return (
     <>
@@ -19,7 +25,7 @@ const Projects = () => {
             return (
               <li
                 key={nanoid()}
-                className="filter-item"
+                className= {(tabSelect===item) ? "filter-item selected" : "filter-item"} 
                 onClick={() => handleFilter(item)}
               >
                 {item}
@@ -28,7 +34,7 @@ const Projects = () => {
           })}
         </ul>
         <ul className="project-list">
-          {projectData.map((project) => {
+          {dataArr.map((project) => {
             return (
               <li key={nanoid()} className="project-item">
                 <a
@@ -48,6 +54,10 @@ const Projects = () => {
                     href={project.previwLink}
                     target="_blank"
                     rel="noopener noreferrer"
+                    style={{
+                      pointerEvents: (project.previwLink === "https://") ? "none" : "auto",
+                      opacity: (project.previwLink === "https://") ? "0.6" : "1"
+                    }}
                   >
                     <ion-icon name="eye-outline"></ion-icon>
                     Preview
@@ -56,6 +66,10 @@ const Projects = () => {
                     href={project.githubLink}
                     target="_blank"
                     rel="noopener noreferrer"
+                    style={{
+                      pointerEvents: (project.previwLink === "https://") ? "none" : "auto",
+                      opacity: (project.previwLink === "https://") ? "0.6" : "1"
+                    }}
                   >
                     <ion-icon name="logo-github"></ion-icon>
                     Github

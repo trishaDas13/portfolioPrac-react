@@ -63,7 +63,7 @@ const projectData = [
         type: "Websites"
     },
     {
-        img: "https://oktayshakirov.000webhostapp.com/team-manager/",
+        img: "https://oktayshakirov.com/assets/images/projects/team-manager.png",
         title: "Team Management Tool",
         category: "Application",
         tech: "PHP | CSV Data | CSS",
