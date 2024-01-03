@@ -8,8 +8,8 @@ import "../about/about.css";
 import Header from "./Header";
 
 const Main = () => {
-  const [menu, setMenu] = useState("Contact");
-  const [currentMenu, setCurrentMenu] = useState("Contact");
+  const [menu, setMenu] = useState("About");
+  const [currentMenu, setCurrentMenu] = useState("About");
   const [currentpageIdx, setCurrentIdx] = useState(0);
   const [paginationStyle, setPaginationStyle] = useState({
     display: "flex",
