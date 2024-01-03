@@ -85,7 +85,7 @@ function Sidebar() {
         clearInterval(intervalId);
         setIndex(15);
       }
-    }, 100);
+    }, 50);
 
     // Clear the interval when the component is unmounted
     return () => clearInterval(intervalId);
