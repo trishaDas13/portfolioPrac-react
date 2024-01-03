@@ -5,6 +5,10 @@
   box-sizing: border-box;
   font-family: "Poppins", sans-serif;
 }
+*::selection {
+  background-color : hsl(45, 100%, 72%);
+  color: #000;
+}
 #root {
   background: linear-gradient(180deg, hsla(205, 46%, 10%, 1) 0%, hsla(192, 97%, 56%, 1) 0%, hsla(208, 62%, 40%, 1) 100%);
   padding: 2rem;
