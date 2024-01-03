@@ -5,6 +5,7 @@
     justify-content: center;
     color: white;
     position: relative;
+    flex-wrap: wrap;
 }
 main{
    border: 1px solid black; 
@@ -128,6 +129,7 @@ main{
     scroll-padding-inline: 25px;
     background: -webkit-linear-gradient(135deg, rgba(34,97,117,0.7) 0%, rgba(44, 82, 93, 0.7) 100%);
     border-radius: 15px;
+    margin-bottom: 2rem;
   }
   .Skills .image_container img{
     transition: 0.25s ease;
@@ -136,4 +138,9 @@ main{
   }
   .Skills .image_container img:hover{
     filter: drop-shadow(10px 10px 30px hsl(45, 100%, 71%));
+  }
+  .Skills h2{
+    text-align: center;
+    color: #ebe8e8;
+    margin-bottom: 1.3rem;
   }
