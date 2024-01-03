@@ -17,24 +17,24 @@ const ProgrammingLanguages = () => {
 		<>
 			<h3>Programming Languages</h3>
 			<div className='flex flex-col gap-6 p-6 bg-black border-white rounded-lg border-opacity-30 bg-opacity-20 border-[2px]'>
-				<div className='flex flex-col gap-2'>
-					<CategorySubheading name={'JavaScript'} value={'95%'} />
+				<div className='progressBar'>
+					<p><b>JavaScript</b>80%</p>
 					<Progress value={progress} limit={95} />
 				</div>
-				<div className='flex flex-col gap-2'>
-					<CategorySubheading name={'TypeScript'} value={'65%'} />
+				<div className='progressBar'>
+                    <p><b>TypeScript</b>50%</p>
 					<Progress value={progress} limit={65} />
 				</div>
-				<div className='flex flex-col gap-2'>
-					<CategorySubheading name={'HTML'} value={'100%'} />
+				<div className='progressBar'>
+                    <p><b>PHP</b>40%</p>
 					<Progress value={progress} limit={100} />
 				</div>
-				<div className='flex flex-col gap-2'>
-					<CategorySubheading name={'CSS'} value={'95%'} />
+				<div className='progressBar'>
+                    <p><b>CSS</b>95%</p>
 					<Progress value={progress} limit={95} />
 				</div>
-				<div className='flex flex-col gap-2'>
-					<CategorySubheading name={'Java'} value={'50%'} />
+				<div className='progressBar'>
+                    <p><b>HTML</b>100%</p>
 					<Progress value={progress} limit={50} />
 				</div>
 			</div>

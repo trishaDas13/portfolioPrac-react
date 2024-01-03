@@ -37,19 +37,19 @@ const Main = () => {
   //TODO function for rendering components according to navbar
   function renderPage() {
     if (menu === "About") {
-      document.title = "Mayank Gupta - About";
+      document.title = "Trisha Das - About";
       return <About />;
     } else if (menu === "Certificates") {
-      document.title = "Mayank Gupta - Certificates";
+      document.title = "Trisha Das - Certificates";
       return <Certificates />;
     } else if (menu === "Projects") {
-      document.title = "Mayank Gupta - Projects";
+      document.title = "Trisha Das - Projects";
       return <Projects />;
     } else if (menu === "More") {
-      document.title = "Mayank Gupta - More";
+      document.title = "Trisha Das - More";
       return <More />;
     } else if (menu === "Contact") {
-      document.title = "Mayank Gupta - Contact";
+      document.title = "Trisha Das - Contact";
       return <Contact />;
     }
   }
