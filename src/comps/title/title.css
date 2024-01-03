@@ -1,6 +1,5 @@
 .article_title{
-    margin-bottom: 3rem;
-    margin-left: 1rem;
+    margin: 1rem 0 3rem 1rem;
     position: relative;
     font-weight: 600;
 }
