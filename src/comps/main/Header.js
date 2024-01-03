@@ -2,25 +2,7 @@ import React from "react";
 import "./Haeder.css";
 import { nanoid } from "nanoid";
 
-const Header = ({ setMenu, currentMenu }) => {
-  //TODO array of objects for nav-Links
-  let navLinks = [
-    {
-      menu: "About",
-    },
-    {
-      menu: "Certificates",
-    },
-    {
-      menu: "Projects",
-    },
-    {
-      menu: "More",
-    },
-    {
-      menu: "Contact",
-    },
-  ];
+const Header = ({ setMenu, currentMenu, navLinks }) => {
 
   //TODO render Header Data
   return (
@@ -31,13 +13,13 @@ const Header = ({ setMenu, currentMenu }) => {
             <li key={nanoid()}>
               <button
                 className={
-                  item.menu === currentMenu
+                  item === currentMenu
                     ? "nav-link-btn active"
                     : "nav-link-btn"
                 }
-                onClick={() => setMenu(item.menu)}
+                onClick={() => setMenu(item)}
               >
-                {item.menu}
+                {item}
               </button>
             </li>
           );
