@@ -7,7 +7,7 @@ aside{
     padding: 2rem;
     align-items: center;
     text-align: center;
-    background-color: rgb(33,130,156);
+    background-color: rgba(33, 129, 156, 0.74);
     border-radius: 20px;
     color: white;
     position: sticky;
@@ -18,16 +18,16 @@ aside .name_info img{
     height: 150px;
     border-radius: 15px;
 }
-aside .name_info p{
+aside .name_info .helloWorld{
     padding: 4px;
     border-radius: 15px;
-    font-weight: 600;
+    font-size: 15px;
     margin: 10px 0;
     width: 175px;
-    background-color:  hsla(240, 2%, 12%, 0.788);;
-  padding: 3px 12px;
-  border-radius: 18px;
-  animation: glow 5s ease-in-out infinite alternate;
+    background-color: hsla(240, 2%, 12%, 0.445);
+    padding: 3px 12px;
+    border-radius: 18px;
+    animation: glow 5s ease-in-out infinite alternate;
 }
 @keyframes glow {
     from {

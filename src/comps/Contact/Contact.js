@@ -19,7 +19,9 @@ const Contact = () => {
         <h3>Email:</h3>
         <div className="emailBox">
           <p>trishaDas13@gmail.com</p>
-          <button>Copy</button>
+          <button 
+            onClick={() => {navigator.clipboard.writeText("trishaDas13@gmail.com")}}
+          >Copy</button>
         </div>
       </div>
       <div className="calender section">

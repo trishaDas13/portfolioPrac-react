@@ -4,7 +4,7 @@
     gap: 30px;
 }
 .section{
-    background: linear-gradient(135deg, rgba(14, 27, 37, 0.8) 0%, hsla(191, 28%, 23%, 0.8) 50%, hsla(207, 41%, 27%, 0.8) 100%);
+    background: linear-gradient(135deg, rgba(14, 27, 37, 0.7) 0%, hsla(191, 28%, 23%, 0.7) 50%, hsla(207, 41%, 27%, 0.7) 100%);
     border-radius: 14px;
     padding: 30px;
     display: flex;

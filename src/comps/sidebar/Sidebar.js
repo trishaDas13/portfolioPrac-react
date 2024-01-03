@@ -96,7 +96,7 @@ function Sidebar() {
       <section className="name_info">
         <img src={profile} alt="error" />
         <h2>Trisha Das</h2>
-        <p>{text[index]}</p>
+        <p className="helloWorld">{text[index]}</p>
       </section>
       <section className="personal_info">
         {personalInfoArr.map((item, i) => {
