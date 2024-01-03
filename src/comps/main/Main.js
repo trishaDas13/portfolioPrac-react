@@ -8,8 +8,8 @@ import "../about/about.css";
 import Header from "./Header";
 
 const Main = () => {
-  const [menu, setMenu] = useState("About");
-  const [currentMenu, setCurrentMenu] = useState("About");
+  const [menu, setMenu] = useState("Certificates");
+  const [currentMenu, setCurrentMenu] = useState("Certificates");
 
   //TODO useEffect wwhen component updated with menu dependency
   useEffect(() => {
@@ -19,7 +19,7 @@ const Main = () => {
   //TODO function for rendering components according to navbar
   function renderPage() {
     if (menu === "About") {
-      document.title = "Mayank Gupta";
+      document.title = "Mayank Gupta - About";
       return <About />;
     } else if (menu === "Certificates") {
       document.title = "Mayank Gupta - Certificates";
